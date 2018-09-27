@@ -315,7 +315,9 @@ struct es_obj_metadata {
       } else {
         if (name != "pg_ver" &&
             name != "source_zone" &&
-            name != "idtag") {
+            name != "idtag" &&
+            name != "unix-key1" &&
+            name != "unix1") {
           out_attrs[name] = string(val.c_str(), (val.length() > 0 ? val.length() - 1 : 0));
         }
       }
